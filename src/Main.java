@@ -1,22 +1,26 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int[][] A = {{1, 8, 3, 4, 0},
-                     {6, 7, 2, 7, 0}};
 
-        int[][] B = {{3, 5, 6, 7, 7},
-                    {4, 2, 2, 8, 9},
-                    {6, 3, 2, 9, 7}};
+        System.out.println("Enter number of rows for matrix");
+        Scanner userInput = new Scanner(System.in);
+        int rowOneInput = userInput.nextInt();
 
-        int[][] C = {{12, 2, 4},
-                {17, 10, 1},
-                {92, 80, 79}};
+        System.out.println("Enter number of columns for matrix");
+        int columnOneInput = userInput.nextInt();
+        int[][] matrix = new int[rowOneInput][columnOneInput];
 
-        peakColumns(A);
-        peakColumns(B);
-        peakColumns(C);
+        // for inserting elements into matrix
+        System.out.println("Enter matrix elements one row at a time: ");
+        for (int i = 0; i < matrix.length; i++)
+            for (int j = 0; j < matrix[0].length; j++)
+                matrix[i][j] = userInput.nextInt();
+
+        System.out.println("Input 2D array " + Arrays.deepToString(matrix));
+        peakColumns(matrix);
     }
 
     private static void peakColumns(int[][] inputArray) {
@@ -45,7 +49,7 @@ public class Main {
                 }
             }
         } catch (Exception exception) {
-            System.out.println("Ensure given matrix is in the right form");
+            System.out.println("Ensure given matrix is in the right form with numbers only");
         }
     }
 
