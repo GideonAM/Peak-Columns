@@ -4,7 +4,9 @@
     values of all peak-columns found within a given 2D array.
 
 ## Sample inputs
-![image](https://github.com/user-attachments/assets/8cdebd09-79ad-4f82-8807-038407a9b280)
+![image](https://github.com/user-attachments/assets/fee57d76-bed3-4477-9c03-64f8f6744e40)
+
 
 ## Corresponding output to the given inputs
-![image](https://github.com/user-attachments/assets/e93bb72c-71ef-4c15-8ca2-2dc3df44073c)
+![image](https://github.com/user-attachments/assets/ec4d4b95-c4cc-443a-a8d4-396190c0fc52)
+
